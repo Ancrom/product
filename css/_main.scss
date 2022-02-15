@@ -1,0 +1,107 @@
+/* ==================== МЕЙН ====================*/
+.hero {
+	justify-content: space-between;
+	padding: 205px 0 0 0;
+	margin: 0 0 145px 0;
+}
+.features {
+	min-width: 60%;
+	margin: 0 15px 0 0;
+	&__title {
+		font-size: 54px;
+		line-height: 64px;
+		margin: 0 0 24px 0;
+		padding: 35px 0 0 0;
+	}
+	&__subtitle {
+		color: #959595;
+		font-size: 20px;
+		line-height: 30px;
+		font-weight: 600;
+		margin: 0 0 88px 0;
+	}
+}
+.features-img {
+	align-items: flex-start;
+	margin: 0 100px 0 0;
+	img {
+		width: 100%;
+		max-width: 400px;
+	}
+}
+.button {
+	align-items: center;
+	background: #9d9d9d;
+	color: #fff;
+	padding: 17px 48px;
+	border-radius: 4px;
+	font-size: 18px;
+	span {
+		padding: 0 0 0 16px;
+		// padding: 0 0 0 38px;
+		// background: url(../img/icons/mail.svg) left / contain no-repeat;
+	}
+	&:hover {
+		background: #777;
+	}
+}
+
+.arrow-text {
+	align-items: center;
+	margin: 0 0 80px 0;
+	img {
+		margin: 0 32px 0 0;
+	}
+	span {
+		font-size: 16px;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+		color: #dededec0;
+	}
+}
+.cards-title {
+	margin: 0 0 65px 0;
+	font-size: 36px;
+	line-height: 50px;
+	text-align: center;
+}
+.cards-box {
+	margin: 0 0 240px 0;
+	display: grid;
+	gap: 20px;
+	grid-template: "A B";
+	&__card {
+		img {
+			width: 100%;
+		}
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	&--2-columns &__card:nth-child(2) {
+		padding: 125px 0 0 0;
+	}
+	&--2-columns &__card:nth-child(3) {
+		margin: -125px 0 0 0;
+	}
+}
+.cards-box--3-columns {
+	grid-template: "A B C";
+}
+
+.features--contact {
+	margin: 0 0 125px 0;
+	text-align: center;
+	& .features__title {
+		padding: 0;
+		font-size: 36px;
+		line-height: 50px;
+	}
+	& .features__subtitle {
+		margin: 0 0 48px 0;
+		font-weight: 600;
+	}
+	& .button {
+		margin: 0 auto;
+	}
+}

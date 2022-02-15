@@ -1,0 +1,97 @@
+// !ОБНУЛЕНИЕ ========================================
+@import "_nullstyle";
+/* ==================== ОБЩИЕ ==================== */
+body {
+	position: relative;
+	background: #000;
+	color: #fff;
+}
+.wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 95px;
+}
+.flex {
+	display: flex;
+}
+a:hover {
+	color: #777;
+} // !БУРГЕР ===========================================
+.burger {
+	display: none;
+	// height: 20px;
+	padding: 20px;
+	z-index: 101;
+	position: relative;
+	cursor: pointer;
+	&__line,
+	&__line::before,
+	&__line::after {
+		background: #fff;
+		height: 2px;
+		width: 21px;
+	}
+	&__line::before {
+		content: "";
+		position: absolute;
+		top: 12px;
+		left: 20px;
+	}
+	&__line::after {
+		content: "";
+		position: absolute;
+		top: 28px;
+		left: 20px;
+	}
+	&:active {
+		background: rgba(114, 180, 255, 0.322);
+	}
+	// !ВЫПАДАЮЩЕЕ МЕНЮ ==================================
+}
+.side-menu {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 100;
+	background: rgb(46, 46, 46);
+	height: 100vh;
+	width: 100vw;
+	box-shadow: -1px 0 0 #696969;
+	&__box {
+		flex-flow: column nowrap;
+		align-items: center;
+		margin: 19px auto;
+		width: 100%;
+		.burger {
+			align-self: flex-end;
+			margin: 0 20px 30px 0;
+		}
+	}
+	&__item {
+		padding: 50px 0;
+		width: 100%;
+		text-align: center;
+		color: white;
+		font-size: 64px;
+	}
+	&__item:hover {
+		background: rgb(85, 85, 85);
+		color: #fff;
+	}
+	&__item:nth-child(even) {
+		border-top: 1px solid #696969;
+		border-bottom: 1px solid #696969;
+	}
+}
+.show {
+	display: flex;
+}
+// !ХИДЕР ============================================
+@import "_header";
+// !МЕЙН =============================================
+@import "_main";
+// !ФУТЕР ============================================
+@import "_footer";
+// !МЕДИА ============================================
+@import "_media";

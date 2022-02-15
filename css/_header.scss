@@ -1,0 +1,25 @@
+/* ==================== ХИДЕР ==================== */
+.header {
+	background: #2e2e2e;
+	width: 100%;
+	position: fixed;
+	z-index: 99;
+}
+.header-content {
+	height: 80px;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu {
+	font-size: 18px;
+	line-height: 25px;
+	&__item {
+		margin: 0 60px 0 0;
+		color: #fff;
+	}
+	&__item:last-child {
+		margin: 0;
+	}
+}
+
+
